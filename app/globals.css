@@ -1,27 +1,21 @@
-@tailwind base;
+@tailwind base; /* directives */
 @tailwind components;
 @tailwind utilities;
 
+/* use it to style that applies to all our pages, anything to do in our body element. Anything that is specific to page or component should be done somewhere else. Do not define custom classes */
 :root {
+  /* custom css */
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
+  /* for mode (dark or light) css */
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  padding: 1rem;
 }
